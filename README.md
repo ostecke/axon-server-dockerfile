@@ -3,7 +3,8 @@
 
 ### Supported tags
 
-* 4.0, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
+* 4.0
+* 4.0.2, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
 
 ### Quick Reference
 
@@ -28,6 +29,11 @@
     [The AxonIQ team](https://www.axoniq.io)
 
 The text below is an extract (with small textual adjustments) of the README in the [GiftCard demo repo on GitHub](https://github.com/AxonIQ/giftcard-demo).
+
+## Release Notes for version 4.0.2
+
+* Performance improvements for event replay.
+* Changes in the event filename format, to match AxonDB filenames.
 
 ## Running Axon Server
 

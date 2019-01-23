@@ -57,4 +57,9 @@ if [ "x${AXONSERVER_CONTROLDB}" != "x" ] ; then
   echo "axoniq.axonserver.controldb-path=${AXONSERVER_CONTROLDB}" >> ${AXONSERVER_HOME}/axonserver.properties
 fi
 
-java -Djava.security.egd=file:/dev/./urandom -Xmx512m -jar ${AXONSERVER_HOME}/axonserver.jar
+# - JAVA_OPTS
+if [ "x${JAVA_OPTS}" = "x" ] ; then
+  export JAVA_OPTS=-Xmx512m
+fi
+
+java -Djava.security.egd=file:/dev/./urandom ${JAVA_OPTS} -jar ${AXONSERVER_HOME}/axonserver.jar

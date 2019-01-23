@@ -92,6 +92,9 @@ Axon Server uses sensible defaults for all of its settings, so it will actually 
 
 The `axoniq/axonserver` image can be customized at start by using one of the following environment variables. If no default is mentioned, leaving the environement variable unspecified will not add a line to the properties file.
 
+* `JAVA_OPTS`
+
+    This is the usual way to pass JVM options. Be advised that the default is to add "`-Xmx512m`" in there, so if you override it be sure to not forget memory settings.
 * `AXONSERVER_NAME`
 
     This is the name the Axon Server uses for itself.

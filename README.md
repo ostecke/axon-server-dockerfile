@@ -94,7 +94,7 @@ The `axoniq/axonserver` image can be customized at start by using one of the fol
 
 * `JAVA_OPTS`
 
-    This is the usual way to pass JVM options. Be advised that the default is to add "`-Xmx512m`" in there, so if you override it be sure to not forget memory settings.
+    This is used to pass JVM options. Default is to use it for heap size setting, with "`-Xmx512m`".
 * `AXONSERVER_NAME`
 
     This is the name the Axon Server uses for itself.

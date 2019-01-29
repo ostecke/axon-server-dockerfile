@@ -3,8 +3,12 @@
 
 ### Supported tags
 
-* 4.0
-* 4.0.2, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
+* OpenJDK 8 based ([openjdk:8-jdk, aka openjdk:8u181-jdk-stretch](https://hub.docker.com/_/openjdk)):
+    * 4.0
+    * 4.0.2
+    * 4.0.3, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
+* OpenJDK-11 based ([openjdk:11-jdk, aka openjdk:11.0.1-jdk-stretch](https://hub.docker.com/_/openjdk)):
+    * 4.0.3-jdk11
 
 ### Quick Reference
 

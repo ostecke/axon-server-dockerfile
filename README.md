@@ -30,6 +30,11 @@
 
 The text below is an extract (with small textual adjustments) of the README in the [GiftCard demo repo on GitHub](https://github.com/AxonIQ/giftcard-demo).
 
+## Release Notes for version 4.0.3
+
+* Support for Java versions 10 and 11
+* Actuator endpoints no longer require AxonIQ-Access-Token when access control enabled
+
 ## Release Notes for version 4.0.2
 
 * Performance improvements for event replay.

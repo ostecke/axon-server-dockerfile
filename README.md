@@ -101,6 +101,9 @@ Axon Server uses sensible defaults for all of its settings, so it will actually 
 
 The `axoniq/axonserver` image can be customized at start by using one of the following environment variables. If no default is mentioned, leaving the environement variable unspecified will not add a line to the properties file.
 
+* `JAVA_OPTS`
+
+    This is used to pass JVM options. Default is to use it for heap size setting, with "`-Xmx512m`".
 * `AXONSERVER_NAME`
 
     This is the name the Axon Server uses for itself.

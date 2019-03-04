@@ -20,7 +20,8 @@ COPY axonserver.jar ${AXONSERVER_HOME}/axonserver.jar
 COPY axonserver.properties ${AXONSERVER_HOME}/axonserver.properties
 COPY axonserver-cli.jar ${AXONSERVER_HOME}/axonserver-cli.jar
 COPY startup.sh ${AXONSERVER_HOME}/startup.sh
-COPY LICENSE.txt ${AXONSERVER_HOME}/LICENSE.txt
+COPY ["AXONIQ OPEN SOURCE LICENSE.txt", "${AXONSERVER_HOME}/AXONIQ OPEN SOURCE LICENSE.txt"]
+COPY ["APACHE LICENSE v2.0.txt", "${AXONSERVER_HOME}/APACHE LICENSE v2.0.txt"]
 RUN chmod 755 ${AXONSERVER_HOME}/startup.sh
 
 EXPOSE 8024

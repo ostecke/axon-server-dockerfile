@@ -6,9 +6,13 @@
 * OpenJDK 8 based ([openjdk:8-jdk, aka openjdk:8u181-jdk-stretch](https://hub.docker.com/_/openjdk)):
     * 4.0
     * 4.0.2
-    * 4.0.3, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
+    * 4.0.3
+    * 4.0.4
+    * 4.1, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
 * OpenJDK-11 based ([openjdk:11-jdk, aka openjdk:11.0.1-jdk-stretch](https://hub.docker.com/_/openjdk)):
     * 4.0.3-jdk11
+    * 4.0.4-jdk11
+    * 4.1-jdk11
 
 ### Quick Reference
 
@@ -33,6 +37,14 @@
     [The AxonIQ team](https://www.axoniq.io)
 
 The text below is an extract (with small textual adjustments) of the README in the [GiftCard demo repo on GitHub](https://github.com/AxonIQ/giftcard-demo).
+
+## Release Notes for version 4.1
+
+* Added split/merge functionality for tracking event processors
+
+## Release Notes for version 4.0.4
+
+* Fixed a bug related to storing events with large gaps in sequence numbers.
 
 ## Release Notes for version 4.0.3
 

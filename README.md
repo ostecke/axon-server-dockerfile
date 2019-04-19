@@ -4,12 +4,14 @@
 ### Supported tags
 
 * OpenJDK 8 based ([openjdk:8-jdk, aka openjdk:8u181-jdk-stretch](https://hub.docker.com/_/openjdk)):
-    * 4.1, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
+    * 4.1.1, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
+    * 4.1
     * 4.0.4
     * 4.0.3
     * 4.0.2
     * 4.0
 * OpenJDK-11 based ([openjdk:11-jdk, aka openjdk:11.0.1-jdk-stretch](https://hub.docker.com/_/openjdk)):
+    * 4.1.1-jdk11
     * 4.1-jdk11
     * 4.0.4-jdk11
     * 4.0.3-jdk11
@@ -37,6 +39,13 @@
     [The AxonIQ team](https://www.axoniq.io)
 
 The text below is an extract (with small textual adjustments) of the README in the [GiftCard demo repo on GitHub](https://github.com/AxonIQ/giftcard-demo).
+
+## Release Notes for version 4.1.1
+
+* Sources now available in public GitHub repository
+* Merge tracking event processor not always available when it should
+* Logging changes
+* GRPC version update
 
 ## Release Notes for version 4.1
 

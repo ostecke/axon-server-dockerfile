@@ -52,6 +52,10 @@ fi
 if [ "x${AXONSERVER_EVENTSTORE}" != "x" ] ; then
   echo "axoniq.axonserver.event.storage=${AXONSERVER_EVENTSTORE}" >> ${AXONSERVER_HOME}/axonserver.properties
 fi
+# - AXONSERVER_LOGSTORE
+if [ "x${AXONSERVER_LOGSTORE}" != "x" ] ; then
+  echo "axoniq.axonserver.replication.log-storage-folder=${AXONSERVER_LOGSTORE}" >> ${AXONSERVER_HOME}/axonserver.properties
+fi
 # - AXONSERVER_CONTROLDB
 if [ "x${AXONSERVER_CONTROLDB}" != "x" ] ; then
   echo "axoniq.axonserver.controldb-path=${AXONSERVER_CONTROLDB}" >> ${AXONSERVER_HOME}/axonserver.properties

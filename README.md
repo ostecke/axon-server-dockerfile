@@ -137,6 +137,9 @@ The `axoniq/axonserver` image can be customized at start by using one of the fol
 * `AXONSERVER_EVENTSTORE`
 
     This is the directory used for storing the Events.
+* `AXONSERVER_LOGSTORE`
+
+    This is the directory used for storing the replication log.
 * `AXONSERVER_CONTROLDB`
 
     This is where Axon Server stores information of clients and what types of messages they are interested in.

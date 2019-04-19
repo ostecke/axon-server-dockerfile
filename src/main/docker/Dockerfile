@@ -27,6 +27,7 @@ RUN chmod 755 ${AXONSERVER_HOME}/startup.sh
 EXPOSE 8024
 EXPOSE 8124
 VOLUME [ "${AXONSERVER_HOME}/data" ]
+VOLUME [ "${AXONSERVER_HOME}/log" ]
 
 WORKDIR ${AXONSERVER_HOME}
 CMD [ "/bin/sh", "-c", "${AXONSERVER_HOME}/startup.sh" ]

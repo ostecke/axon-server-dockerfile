@@ -1,10 +1,17 @@
-<!-- Copyright (c) 2018 by Axoniq B.V. - All rights reserved -->
+<!-- Copyright (c) 2018-2019 by Axoniq B.V. - All rights reserved -->
 # Axon Server
 
 ### Supported tags
 
 * OpenJDK 8 based ([openjdk:8-jdk, aka openjdk:8u181-jdk-stretch](https://hub.docker.com/_/openjdk)):
-    * 4.1.2, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
+    * 4.2.2, latest ([Dockerfile](https://github.com/AxonIQ/axon-server-dockerfile/blob/master/src/main/docker/Dockerfile))
+    * 4.2
+    * 4.1.7
+    * 4.1.6
+    * 4.1.5
+    * 4.1.4
+    * 4.1.3
+    * 4.1.2
     * 4.1.1
     * 4.1
     * 4.0.4
@@ -12,6 +19,13 @@
     * 4.0.2
     * 4.0
 * OpenJDK-11 based ([openjdk:11-jdk, aka openjdk:11.0.1-jdk-stretch](https://hub.docker.com/_/openjdk)):
+    * 4.2.2-jdk11
+    * 4.2-jdk11
+    * 4.1.7-jdk11
+    * 4.1.6-jdk11
+    * 4.1.5-jdk11
+    * 4.1.4-jdk11
+    * 4.1.3-jdk11
     * 4.1.2-jdk11
     * 4.1.1-jdk11
     * 4.1-jdk11
@@ -41,6 +55,46 @@
     [The AxonIQ team](https://www.axoniq.io)
 
 The text below is an extract (with small textual adjustments) of the README in the [GiftCard demo repo on GitHub](https://github.com/AxonIQ/giftcard-demo).
+
+## Release Notes for version 4.2.2
+
+* Cleaned-up logging
+* Fix for specific error while reading aggregate
+* Optional heartbeat between Axon Server and Axon Framework clients
+
+## Release Notes for version 4.2
+
+* Development mode with delete all events operation added
+* Blacklisting event types for applications that cannot handle these events
+* Expose tracking event processor position and status
+
+## Release Notes for version 4.1.7
+
+* Fix for saving aggregates failing with error "Invalid Sequence number" in specific circumstances
+
+## Release Notes for version 4.1.6
+
+* Added operation to set cached version numbers for aggregates
+
+## Release Notes for version 4.1.5
+
+* Fix for authorization path mapping and improvements for rest access control
+
+* Improvements in release procedure for docker images
+
+* Fix for subscription query memory leak
+
+* Improvements in error reporting in case of disconnected applications
+
+* Improvements in detection of insufficient disk space
+
+## Release Notes for version 4.1.4
+
+* Fix for appendEvent with no events in stream
+
+## Release Notes for version 4.1.3
+
+* CLI commands now can be performed locally without token.
 
 ## Release Notes for version 4.1.2
 
